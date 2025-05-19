@@ -35,8 +35,11 @@
         }
       ]
     ],
-    "experiments": {
-      "typedRoutes": true
+    "experimental": {
+      "router": {
+        "enabled": true,
+        "routeGroups": true
+      }
     }
   }
 }
