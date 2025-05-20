@@ -2,14 +2,22 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 // import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
+import {
+  FIREBASE_API_KEY,
+  FIREBASE_AUTH_DOMAIN,
+  FIREBASE_PROJECT_ID,
+  FIREBASE_STORAGE_BUCKET,
+  FIREBASE_MESSAGING_SENDER_ID,
+  FIREBASE_APP_ID,
+} from "@env";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4nijICWrbUIC9Z0MOJlzijyAkPV6VSPs",
-  authDomain: "playgroundscout-f93c3.firebaseapp.com",
-  projectId: "playgroundscout-f93c3",
-  storageBucket: "playgroundscout-f93c3.appspot.com",
-  messagingSenderId: "797298024576",
-  appId: "1:797298024576:web:ba6df91f4f81d8840f0665",
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);

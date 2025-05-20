@@ -5,9 +5,7 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
@@ -18,6 +16,7 @@
     "hooks/**/*.ts",
     "hooks/**/*.tsx",
     "constants/**/*.ts",
-    "types/**/*.ts"
+    "types/**/*.ts",
+    "types/env.d.ts"
   ]
 }
