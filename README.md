@@ -75,6 +75,7 @@ Each playground entry includes:
 - Localization en/fr
 - Satellite view
 - Heatmap?
+- dark/light theme
 
 ## Tech Stack Overview
  ### Frontend:

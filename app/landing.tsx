@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import {
   View,
   Text,
@@ -10,6 +11,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function LandingPage() {
   const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <ImageBackground
@@ -18,7 +20,10 @@ export default function LandingPage() {
     >
       <View style={styles.overlay}>
         <Text style={styles.title}>{t("appTitle")}</Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("/(tabs)")}
+        >
           <Text style={styles.buttonText}>{t("findPlaygrounds")}</Text>
         </TouchableOpacity>
         <LanguageSwitcher />
@@ -29,10 +34,10 @@ export default function LandingPage() {
 
 const styles = StyleSheet.create({
   background: {
-    backgroundColor: "#A1CEDC"
-    // flex: 1,
-    // justifyContent: "center",
-    // alignItems: "center",
+    backgroundColor: "#A1CEDC",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   overlay: {
     alignItems: "center",
