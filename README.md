@@ -60,6 +60,22 @@ Each playground entry includes:
 - Report broken equipment or closures
 - View maintenance status (manual or future city integration)
 
+### Some other core ideas
+- User Interaction & History
+  - Visited Status: Let users mark playgrounds they’ve visited; update the pin color on the map.
+  - "Been There" Map Layer: Option to filter map/list by visited, favorited, or unvisited playgrounds.
+- Accessibility
+  - Wheelchair-accessible ramps
+  - Adaptive / platform swings
+  - Braille signage or tactile paths
+- Content
+  - Photo Timestamps: Show the date when photos were taken so users can assess freshness and accuracy.
+  - Verified User Content: Only logged-in, verified users can upload photos or reviews.
+  - AI Moderation: Use Firebase ML  to auto-check for inappropriate uploads.
+- Localization en/fr
+- Satellite view
+- Heatmap?
+
 ## Tech Stack Overview
  ### Frontend:
 **Framework**: React Native (via Expo) <br>
